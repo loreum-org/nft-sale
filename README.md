@@ -6,7 +6,7 @@
 - Vitest: https://vitest.dev/guide/testing-types.html
 - React Query: https://react-query-v3.tanstack.com/
 - Zustand: https://docs.pmnd.rs/zustand/getting-started/introduction
-- Web3-ui: https://github.com/Developer-DAO/web3-ui
+- Web3-ui: https://github.com/web3ui/web3uikit
 
 ## Dev
 
