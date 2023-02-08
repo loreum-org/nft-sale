@@ -1,0 +1,35 @@
+{
+  "name": "nft-sale",
+  "private": true,
+  "version": "0.0.1",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "test": "vitest --config vitest.config.ts",
+    "typecheck": "vitest typecheck",
+    "coverage": "vitest run --coverage",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "format:check": "prettier --check '*/**/*.{tsx,jsx,js,ts,yaml,yml,json}'",
+    "format:write": "prettier --write '*/**/*.{tsx,jsx,js,ts,yaml,yml,json}'"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^17.4.2",
+    "@commitlint/config-conventional": "^17.4.2",
+    "@types/react": "^18.0.27",
+    "@types/react-dom": "^18.0.10",
+    "@typescript-eslint/eslint-plugin": "^5.51.0",
+    "@typescript-eslint/parser": "^5.51.0",
+    "@vitejs/plugin-react": "^3.1.0",
+    "eslint": "^8.33.0",
+    "eslint-config-prettier": "^8.6.0",
+    "prettier": "^2.8.4",
+    "typescript": "^4.9.3",
+    "vite": "^4.1.0",
+    "vitest": "^0.28.4"
+  }
+}
