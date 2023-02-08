@@ -9,20 +9,9 @@ on:
 
 jobs:
   tests:
-    name: Matchstick
+    name: Vitest
     runs-on: ubuntu-latest
     container: node:18
-
-    services:
-      postgres:
-        image: postgres:14
-        env:
-          POSTGRES_PASSWORD: postgres
-        options: >-
-          --health-cmd pg_isready
-          --health-interval 10s
-          --health-timeout 5s
-          --health-retries 5
 
     steps:
       - name: Checkout code
@@ -37,11 +26,8 @@ jobs:
       - name: Install dependencies
         run: yarn install --frozen-lockfile
 
-      - name: Run codegen
-        run: yarn codegen
-
       - name: Run build
-        run: yarn build:local
+        run: yarn build
 
       - name: Run tests
         run: yarn test
