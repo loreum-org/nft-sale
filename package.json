@@ -9,6 +9,7 @@
     "typecheck": "vitest typecheck",
     "coverage": "vitest run --coverage",
     "build": "tsc && vite build",
+    "lint": "eslint 'src/**/*.{jsx,tsx,js,ts}'",
     "preview": "vite preview",
     "format:check": "prettier --check '*/**/*.{tsx,jsx,js,ts,yaml,yml,json}'",
     "format:write": "prettier --write '*/**/*.{tsx,jsx,js,ts,yaml,yml,json}'"
